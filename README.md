@@ -3,7 +3,13 @@ API to manage urban ocurrences
 
 Install:
 1. pip install -r requirements.txt
-2. Create a postgres database and user with postgis extension (refer to: https://docs.djangoproject.com/en/1.11/ref/contrib/gis/install/postgis/)
+2. Create a postgres database and user with postgis extension (refer to: https://docs.djangoproject.com/en/1.11/ref/contrib/gis/install/postgis/).
+	Por exemplo: sudo -u postgres createdb urbanocgis
+				 sudo -u postgres createuser --createdb urbanocgis_user
+				 sudo -u postgres psql urbanocgis -c "ALTER USER urbanocgis_user with password '1234'";
+				 sudo -u postgres psql urbanocgis -c "GRANT ALL PRIVILEGES ON DATABASE urbanocgis TO urbanocgis_user";
+				 sudo -u postgres psql urbanocgis -c "CREATE EXTENSION postgis";
+
 3. update NAME, USER and PASSWORD in the DATABASES section of urbanoc/settings.py, according to the settings defined in 2.
 4. Migrations: python manage.py makemigrations; python manage.py migrate
 5. Create a user to interact with the api: python manage.py createsuperuser
