@@ -22,6 +22,6 @@ API endpoints:
 6. List or Edit available authors: http://localhost:8000/authors/
 7. List or Edit available authors: http://localhost:8000/ocurrence_locations/
 
-Anonymous users may see urban ocurrences
-Only authenticated users may create or edit ocurrences
-Only admins may set the status of the ocurrence
+Anonymous users may see urban ocurrences.
+Only authenticated users may create or edit ocurrences.
+Only admins may set the status of the ocurrence.
