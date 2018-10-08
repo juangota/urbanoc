@@ -27,7 +27,7 @@ API endpoints:
     optionally the user may provide the units of radius (by default, units are m).
     Ex: http://localhost:8000/urban_ocurrences/?ref_lat=40.0&ref_lon=-8.0&radius=50&rad_units=km
 6. List or Edit available authors: http://localhost:8000/authors/
-7. List or Edit available authors: http://localhost:8000/ocurrence_locations/
+7. List or Edit available locations: http://localhost:8000/ocurrence_locations/
 
 Anonymous users may see urban ocurrences.
 Only authenticated users may create or edit ocurrences.
